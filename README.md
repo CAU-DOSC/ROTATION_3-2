@@ -17,4 +17,6 @@
 ### STRLength	ROTATEdistance 	T.trivial	J.juggle	T.bw		T.reverse
 ---------------------------------------------------------------------
 
-
+## 추론
+####
+* * *
