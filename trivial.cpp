@@ -7,7 +7,7 @@ char *trivial(char str[], int n, int d) {
 			for (int j = n - 1; j > 0; j--) {
 				str[j] = str[j - 1];
 			}
-			str[1] = temp;
+			str[0] = temp;
 		}
 	}
 	else {
@@ -17,7 +17,7 @@ char *trivial(char str[], int n, int d) {
 			for (int j = n - 1; j > 0; j--) {
 				str[j] = str[j - 1];
 			}
-			str[1] = temp;
+			str[0] = temp;
 		}
 	}
 	return str;
