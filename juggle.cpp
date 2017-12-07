@@ -1,7 +1,8 @@
 #include "Stringsort_Head.h"
 
 
-//ÃÖ´ë°ø¾à¼ö Ã£´Â ÇÔ¼ö
+//ìµœëŒ€ê³µì•½ìˆ˜ ì°¾ëŠ” í•¨ìˆ˜
+
 int getGCD(int a, int b) {
 	while (0 != b) {
 		int temp = a % b;
@@ -15,7 +16,7 @@ char *juggling(char str[], int n, int d)
 {
 	int i, j, k, temp;
 
-	// ½Ã°è¹æÇâÀ¸·Î rotate
+	// ì‹œê³„ë°©í–¥ìœ¼ë¡œ rotate
 	if (d >= 0) {
 		for (i = 0; i < getGCD(d, n); i++)
 		{
@@ -36,7 +37,7 @@ char *juggling(char str[], int n, int d)
 		}
 	}
 
-	//¹Ý½Ã°è¹æÇâÀ¸·Î rotate
+	//ë°˜ì‹œê³„ë°©í–¥ìœ¼ë¡œ rotate
 	if (d < 0) {
 		for (i = 0; i < getGCD(d, n); i++)
 		{
