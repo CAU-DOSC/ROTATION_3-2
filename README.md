@@ -11,7 +11,7 @@
 ## reverse-김성윤
 ####
 ## Main-강영빈
-####
+#### 문자열을 두 개로 나눈 후 앞, 뒤의 문자열의 길이에 따라 두 문자열을 swap하는 과정을 재귀적으로 반복하였습니다. 
 * * * * * * * * * * *
 ## 실험결과
 ### STRLength	ROTATEdistance 	T.trivial	J.juggle	T.bw		T.reverse
