@@ -40,7 +40,7 @@ char* blockswap(char str[], int len, int d)
 	//앞 문자열이 더 짧을 때
 	if (2 * d > len)	
 	{
-		strswap(str, str +len - d, len - d);
+		strswap(str, str + d, len - d);
 		blockswap(str, d, 2 * d - len);
 		return str;
 	}
