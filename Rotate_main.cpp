@@ -30,7 +30,7 @@ int main()
 
 	//0이면 d가 양수 1이면 d가 음수
 	posi_nega = (rand() % 2);
-	n = (rand() % 8000) + 1;
+	n = (rand() % 10000) + 5000;
 	d = (rand() % n) + 1;
 	if (posi_nega == 1)
 		d = -d;
@@ -45,19 +45,19 @@ int main()
 
 	time_t exetime = clock();
 	trivial(str, n, d);
-	printf("%-16f", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f", (double)((clock() - exetime)) / CLOCKS_PER_SEC);
 
 	exetime = clock();
 	juggling(str, n, d);
-	printf("%-16f", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f", (double)((clock() - exetime)) / CLOCKS_PER_SEC);
 
 	exetime = clock();
 	blockswap(str, n, d);
-	printf("%-16f", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f", (double)((clock() - exetime)) / CLOCKS_PER_SEC);
 
 	exetime = clock();
 	reverse(str, n, d);
-	printf("%-16f\n", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f\n", (double)((clock() - exetime)) / CLOCKS_PER_SEC);
 
 	return 0;
 }
