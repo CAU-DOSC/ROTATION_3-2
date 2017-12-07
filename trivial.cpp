@@ -1,3 +1,5 @@
+#include "Stringsort_Head.h"
+
 char *trivial(char str[], int n, int d) {
 
 	char temp;

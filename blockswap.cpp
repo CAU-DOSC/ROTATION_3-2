@@ -1,4 +1,4 @@
-//#include "Stringsort_Head"
+#include "Stringsort_Head.h"
 //n/d 이 5000을 넘어가면stack overflow가 생기는 오류가 있습니다
 
 //str1의 주소값과 str2의 주소값에서 각각 d만큼을 서로 스왑함
