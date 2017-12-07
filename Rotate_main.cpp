@@ -1,15 +1,5 @@
 #include "Stringsort_Head.h"
 
-/*#include <stdio.h>
-#include <string.h>
-#include <time.h>
-#include <stdlib.h>
-#pragma warning(disable: 4996)
-char *trivial(char str[], int n, int d);
-char *juggling(char str[], int n, int d);
-char *blockswap(char str[], int n, int d);
-char *reverse(char str[], int n, int d);*/
-
 /*
 int main()
 {
@@ -37,13 +27,10 @@ int main()
 	int n;
 	int posi_nega;
 	srand(time(NULL));
-	
-	//printf("문자열의 총 길이인 n과 rotation 상수 d를 입력하세요\n");
-	//scanf("%d %d", &n, &d);
 
 	//0이면 d가 양수 1이면 d가 음수
 	posi_nega = (rand() % 2);
-	n = (rand() % 1000) + 1;
+	n = (rand() % 8000) + 1;
 	d = (rand() % n) + 1;
 	if (posi_nega == 1)
 		d = -d;
