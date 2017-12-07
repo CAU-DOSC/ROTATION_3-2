@@ -28,9 +28,14 @@ int main()
 	int posi_nega;
 	srand(time(NULL));
 
+	double time;
+	//printf("문자열의 총 길이인 n과 rotation 상수 d를 입력하세요\n");
+	//scanf("%d %d", &n, &d);
+
 	//0이면 d가 양수 1이면 d가 음수
 	posi_nega = (rand() % 2);
-	n = (rand() % 8000) + 1;
+	n = (rand() % 100000) + 50000;
+
 	d = (rand() % n) + 1;
 	if (posi_nega == 1)
 		d = -d;
@@ -43,21 +48,22 @@ int main()
 	printf("STRLength\tROTATEdistance\t\tT.trivial\tT.Juggle\tT.bw\t\tT.reverse\n");
 	printf("%-16d%-24d", n, d);
 
-	time_t exetime = clock();
+	time = clock();
 	trivial(str, n, d);
-	printf("%-16f", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	
+	printf("%-16f", (clock()-time)/CLOCKS_PER_SEC);
 
-	exetime = clock();
+	time = clock();
 	juggling(str, n, d);
-	printf("%-16f", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f", (clock() - time) / CLOCKS_PER_SEC);
 
-	exetime = clock();
+	time = clock();
 	blockswap(str, n, d);
-	printf("%-16f", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f", (clock() - time) / CLOCKS_PER_SEC);
 
-	exetime = clock();
+	time = clock();
 	reverse(str, n, d);
-	printf("%-16f\n", (double)((clock() - exetime) / CLOCKS_PER_SEC));
+	printf("%-16f", (clock() - time) / CLOCKS_PER_SEC);
 
 	return 0;
 }

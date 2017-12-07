@@ -1,6 +1,8 @@
 #include "Stringsort_Head.h"
 
+
 //최대공약수 찾는 함수
+
 int getGCD(int a, int b) {
 	while (0 != b) {
 		int temp = a % b;
@@ -58,3 +60,4 @@ char *juggling(char str[], int n, int d)
 
 	return str;
 }
+

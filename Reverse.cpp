@@ -1,5 +1,6 @@
 #include "Stringsort_Head.h"
 
+
 void strrev(char str[], int length)
 {
 	char temp = 0;
@@ -15,7 +16,7 @@ void strrev(char str[], int length)
 char *reverse(char str[], int n, int d)
 {
 	char *str1, *str2;
-	//CounterClockWise Rotation(�ݽð����)
+	//CounterClockWise Rotation(¹Ý½Ã°è¹æÇâ)
 	if (d < 0)
 	{
 		d = -d;
@@ -33,7 +34,7 @@ char *reverse(char str[], int n, int d)
 			str[b + d] = str2[b];
 		strrev(str, n);
 	}
-	//ClockWise Rotation(�ð����)
+	//ClockWise Rotation(½Ã°è¹æÇâ)
 	else
 	{
 		str1 = (char*)malloc(sizeof(char) * ((n - d) + 1));
