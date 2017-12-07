@@ -1,5 +1,4 @@
-//#include "Stringsort_Head.h"
-//#include <math.h>
+#include "Stringsort_Head.h"
 
 //최대공약수 찾는 함수
 int getGCD(int a, int b) {

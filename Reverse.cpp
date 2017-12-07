@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "Stringsort_Head.h"
 
 void strrev(char str[], int length)
 {
