@@ -12,30 +12,31 @@ Your description start form next line and do not delete lines upto this point.
 # ROTATION3-2
 
 ## function descriptions
-### trivial
-#### input parameters: char str[],int n, int d
-#### output parameter: char *
-#### file name: trivial.cpp
-#### ownership: 조중현
+ ```
+1.trivial
+ input parameters: char str[],int n, int d
+ output parameter: char *
+ file name: trivial.cpp
+ ownership: 조중현
 
-### juggling
-#### input parameters: char str[],int n, int d
-#### output parameter: char *
-#### file name: juggle.cpp
-#### ownership: 박진영
+2.juggling
+ input parameters: char str[],int n, int d
+ output parameter: char *
+ file name: juggle.cpp
+ ownership: 박진영
 
-### blockswap
-#### input parameters: char str[],int n, int d
-#### output parameter: char *
-#### file name: blockswap.cpp
-#### ownership: 강영빈
+3.blockswap
+ input parameters: char str[],int n, int d
+ output parameter: char *
+ file name: blockswap.cpp
+ ownership: 강영빈
 
-### reverse
-#### input parameters: char str[],int n, int d
-#### output parameter: char *
-#### file name: reverse.cpp
-#### ownership: 김성윤
-
+4.reverse
+ input parameters: char str[],int n, int d
+ output parameter: char *
+ file name: reverse.cpp
+ ownership: 김성윤
+```
 
 ## trivial-조중현
 #### d > 0 일때는 시계 방향, d < 0 일때는 반시계 방향으로 rotate.
@@ -62,11 +63,11 @@ STRLength|ROTATEdistance |T.trivial|J.juggle|T.bw	|T.reverse
 
 ## 추론
 #### 위 실험결과를 참고하면 문자열을 rotate하는데 소요 시간은 trivial>juggling>reverse>blockswap 순이였다.
-#### trivial함수의 경우 각각의 문자를 한개씩 총 n의 d배만큼 이동시켜 시간복잡도가 O(nXabs(d))이므로 가장 시간이 오래 걸리는것으로 추정된다.
+#### trivial함수의 경우 각각의 문자를 한개씩 총 n의 d배만큼 이동시켜 계산량이 n * |d| 이므로 가장 시간이 오래 걸리는것으로 추정된다.
 #### 그 이외 3개의 함수의 경우 trivial함수에 비해 압도적으로 짧은 시간이 걸렸다.
 #### juggling함수의 경우 GCD만큼의 문자를 세트로 묶어 이동시키는 방식이므로 GCD가 1일때는 시간이 오래걸리지만
 #### GCD가 d에 가까워질수록 빠르게 rotate 할 수 있으면 GCD가 d라면 단 n번의 이동만으로 rotate가 가능하다.
 #### reverse함수의 경우 총 3번의 문자열을 뒤집는 과정을 통해 (d/2)+((n-d)/2)+(n/2), 즉 총 n번의 연산만으로 rotate가 가능하다.
 #### blockswap함수의 경우 문자열을 앞, 뒤로 나눠 문자열의 길이가 같을때 까지 swap과정을 재귀적으로 반복하므로 n번의 연산만으로 rotate가 가능하다.
-#### 즉 trivial을 제외한 세 함수는 시간복잡도가 O(n)이므로 압도적으로 짧은 시간이 걸리는 것으로 추정된다.
+#### 즉 trivial을 제외한 세 함수는 계산량이 O(n)이므로 압도적으로 짧은 시간이 걸리는 것으로 추정된다.
 * * *
