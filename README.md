@@ -69,5 +69,5 @@ STRLength|ROTATEdistance |T.trivial|J.juggle|T.bw	|T.reverse
 #### GCD가 d에 가까워질수록 빠르게 rotate 할 수 있으면 GCD가 d라면 단 n번의 이동만으로 rotate가 가능하다.
 #### reverse함수의 경우 총 3번의 문자열을 뒤집는 과정을 통해 (d/2)+((n-d)/2)+(n/2), 즉 총 n번의 연산만으로 rotate가 가능하다.
 #### blockswap함수의 경우 문자열을 앞, 뒤로 나눠 문자열의 길이가 같을때 까지 swap과정을 재귀적으로 반복하므로 n번의 연산만으로 rotate가 가능하다.
-#### 즉 trivial을 제외한 세 함수는 계산량이 O(n)이므로 압도적으로 짧은 시간이 걸리는 것으로 추정된다.
+#### 즉 trivial을 제외한 세 함수는 계산량이 n이므로 압도적으로 짧은 시간이 걸리는 것으로 추정된다.
 * * *
