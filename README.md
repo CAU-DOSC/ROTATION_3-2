@@ -34,7 +34,7 @@ Your description start form next line and do not delete lines upto this point.
 4.reverse
  input parameters: char str[],int n, int d
  output parameter: char *
- file name: reverse.cpp
+ file name: Reverse.cpp
  ownership: 김성윤
 ```
 
