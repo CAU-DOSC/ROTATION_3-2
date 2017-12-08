@@ -13,7 +13,7 @@
 #### 문자열을 두 부분으로 나눈 후 앞, 뒤, 문자열 전체를 reverse하며 문자열 전체를 rotate.
 ## Main-강영빈
 #### 난수 생성을 이용해 문자열과 n, d값을 설정하고 4가지 함수를 이용해 문자열을 rotate하는데 소요되는 시간을 측정.
-##README-김성윤
+## README-김성윤
 * * * * * * * * * 
 ## 실험결과
 STRLength|ROTATEdistance |T.trivial|J.juggle|T.bw	|T.reverse
